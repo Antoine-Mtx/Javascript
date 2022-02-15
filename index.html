@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MORPIOOOOOOOOON</title>
+</head>
+<body>
+    <div id="plateau_de_jeu">
+        <div id="joueur1">
+            <h2>Joueur 1</h2>
+            <p>Score : </p>
+        </div>
+        <div id="echiquier">
+            <script>
+                for (let i = 0; i < 9; i++) {
+                    let nouvelle_case = document.createElement("div")
+                    let nouveau_paragraphe = document.createElement("p")
+                    nouvelle_case.appendChild(nouveau_paragraphe)
+                    nouvelle_case.classList.add("case")
+                    document.getElementById("echiquier").appendChild(nouvelle_case)
+                }
+                for (let element in document.getElementsByClassName("case")) {
+                    element.addEventListener("click",()=>{
+                        element.querySelector("p").innerHTML = "X"
+                        
+                    })
+                }
+            </script>
+        </div>
+        <div id="joueur2">
+            <h2>Joueur 2</h2>
+            <p>Score : </p>
+        </div>
+    </div>
+</body>
+</html>

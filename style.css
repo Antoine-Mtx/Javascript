@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+#plateau_de_jeu {
+    border: 1px solid black;
+    margin-top: 6vh;
+    margin: auto;
+    height: 40em;
+    width: 60em;
+    display: flex;
+}
+
+#joueur1, #joueur2 {
+    background-color: lightslategray;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#echiquier {
+    width: 40em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+}
+
+.case {
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+.case>p {
+    font-size: 5em;
+    text-align: center;
+}
